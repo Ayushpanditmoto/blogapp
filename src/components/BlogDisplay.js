@@ -41,7 +41,14 @@ const BlogDisplay = () => {
             </div>
 
             <div className="section-3">
-              <p>posted on-{blog.createdAt}</p>
+              <p>
+                posted on-
+                {new Date(blog.createdat).toLocaleDateString("en-US", {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                })}
+              </p>
             </div>
           </div>
         ))
