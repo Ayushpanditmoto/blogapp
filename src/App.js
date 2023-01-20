@@ -1,26 +1,17 @@
-import React from 'react'
-import Addblog from './components/Addblog'
-import BlogDisplay from './components/BlogDisplay'
+import React from "react";
+import Addblog from "./components/Addblog";
+import BlogDisplay from "./components/BlogDisplay";
 
-import './App.css';
-
+import "./App.css";
 
 function App() {
   return (
-    <div className='App'>
+    <div className="App">
+      <Addblog />
 
-
-      <div>
-        <BlogDisplay />
-      </div>
-
-      <div>
-        <Addblog />
-      </div>
-
-
+      <BlogDisplay />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
