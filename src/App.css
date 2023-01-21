@@ -6,11 +6,19 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-
+.contain{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .App {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100vw;
+
   overflow-x: hidden;
   padding: 10px;
   justify-content: center;
@@ -18,7 +26,8 @@
 }
 
 .blog-cont {
-  width: 800px;
+  max-width: 800px;
+  width: 95%;
   margin: 30px;
   border-radius: 20px;
   padding: 20px;
@@ -27,7 +36,7 @@
 }
 @media screen and (max-width: 750px) {
   .blog-cont {
-    width: 350px;
+    /* width: 350px; */
 
   }
 }
@@ -106,7 +115,7 @@ hr {
 
 .addblog-form {
   display: flex;
-  width: 80%;
+  width: 95%;
   max-width: 800px;
   flex-direction: column;
   align-items: center;

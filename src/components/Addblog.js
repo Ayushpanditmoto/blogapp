@@ -44,55 +44,57 @@ const Addblog = () => {
   };
 
   return (
-    <div className="addblog-form">
-      <p>Add a new Blog</p>
-      <form onSubmit={handleSubmit} id="my_form">
-        <label>Name</label>
-        <input
-          name="username"
-          placeholder="Enter your name"
-          type="text"
-          onChange={(e) => {
-            setCreatedby(e.target.value);
-          }}
-        />
-        <br />
+    <div className="contain">
+      <div className="addblog-form">
+        <p>Add a new Blog</p>
+        <form onSubmit={handleSubmit} id="my_form">
+          <label>Name</label>
+          <input
+            name="username"
+            placeholder="Enter your name"
+            type="text"
+            onChange={(e) => {
+              setCreatedby(e.target.value);
+            }}
+          />
+          <br />
 
-        <label>Blog Title</label>
-        <input
-          name="title"
-          placeholder="Enter Blog title"
-          type="text"
-          onChange={(e) => {
-            setTitle(e.target.value);
-          }}
-        />
-        <br />
+          <label>Blog Title</label>
+          <input
+            name="title"
+            placeholder="Enter Blog title"
+            type="text"
+            onChange={(e) => {
+              setTitle(e.target.value);
+            }}
+          />
+          <br />
 
-        <label>Blog Description</label>
-        <textarea
-          onChange={(e) => {
-            setDescription(e.target.value);
-          }}
-          type="text"
-          placeholder="Write your article"
-        ></textarea>
-        <br />
+          <label>Blog Description</label>
+          <textarea
+            onChange={(e) => {
+              setDescription(e.target.value);
+            }}
+            type="text"
+            placeholder="Write your article"
+          ></textarea>
+          <br />
 
-        <label>Paste Image link</label>
-        <input
-          name="image"
-          placeholder="Paste image url"
-          type="text"
-          onChange={(e) => {
-            setImgurl(e.target.value);
-          }}
-        />
+          <label>Paste Image link</label>
+          <input
+            name="image"
+            placeholder="Paste image url"
+            type="text"
+            onChange={(e) => {
+              setImgurl(e.target.value);
+            }}
+          />
 
-        <div className="btn-cotainer">
-          <button>Submit</button>
-        </div>
-      </form>
+          <div className="btn-cotainer">
+            <button>Submit</button>
+          </div>
+        </form>
+      </div>
     </div>
   );
 };

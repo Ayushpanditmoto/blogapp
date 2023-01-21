@@ -17,7 +17,7 @@ const BlogDisplay = () => {
   }, []);
 
   return (
-    <div>
+    <div className="contain">
       {blogs.length === 0 ? (
         <p>
           <h1 className="noblog">No Blogs Found</h1>
